@@ -14,3 +14,4 @@ NEW_PASSWORD="CHANGE_PASSWORDS"
 ./modules/prohibited.sh
 ./modules/suid.sh
 ./modules/firewall.sh
+./modules/rhel_sus_software.sh
