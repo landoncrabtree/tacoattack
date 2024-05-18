@@ -6,6 +6,7 @@ NEW_PASSWORD="CHANGE_PASSWORDS"
 ./modules/backup.sh
 ./modules/update.sh
 ./modules/sysctl.sh
+./modules/pam.sh
 ./modules/change_passwords.sh $NEW_PASSWORD
 ./modules/sshd.sh
 ./modules/sudoers.sh
