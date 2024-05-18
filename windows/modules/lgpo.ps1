@@ -25,7 +25,7 @@ if ($os -match 'Server' -and $os -match '2012') {
 }
 
 # Backup current GPOs
-& .\assets\LGPO.exe /b .\
+& .\assets\LGPO.exe /b "C:\backups\"
 
 # Apply STIG GPOs
 & .\assets\LGPO.exe /g .\assets\STIG_GPO\

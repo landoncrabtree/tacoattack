@@ -9,7 +9,7 @@
 & reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" /v NoAutoRebootWithLoggedOnUsers /t REG_DWORD /d 1 /f
 
 # Enable the Windows Update service
-& sc config wuauserv start= auto
+& sc.exe config wuauserv start= auto
 & net start wuauserv
-& sc config trustedinstaller start= auto
+& sc.exe config trustedinstaller start= auto
 & net start trustedinstaller
