@@ -1,3 +1,5 @@
+$NEW_PASSWORD = "CHANGE_PASSWORDS"
+
 # Checks if the script is running as administrator
 if (-not ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
     Write-Warning "You do not have Administrator rights to run this script!`nPlease re-run this script as an Administrator!"
@@ -16,7 +18,7 @@ Start-Process powershell.exe -ArgumentList "-File .\modules\lgpo.ps1" -Verb RunA
 Write-Host "STIG GPOs applied."
 
 # Load change passwords module
-Start-Process powershell.exe -ArgumentList "-File .\modules\change_passwords.ps1" -Verb RunAs -Wait
+Start-Process powershell.exe -ArgumentList "-File .\modules\change_passwords.ps1 -newPassword $NEW_PASSWORD" -Verb RunAs -Wait
 Write-Host "All user passwords changed."
 
 # Load prohibited media module
