@@ -2,6 +2,7 @@
 
 NEW_PASSWORD="CHANGE_PASSWORDS"
 
+./modules/audit.sh
 ./modules/backup.sh
 ./modules/update.sh
 ./modules/sysctl.sh
