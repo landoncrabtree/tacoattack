@@ -7,6 +7,7 @@ NEW_PASSWORD="CHANGE_PASSWORDS"
 ./modules/update.sh
 ./modules/sysctl.sh
 ./modules/change_passwords.sh $NEW_PASSWORD
+./modules/sshd.sh
 ./modules/sudoers.sh
 ./modules/permissions.sh
 ./modules/prohibited.sh
