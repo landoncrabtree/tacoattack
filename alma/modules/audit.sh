@@ -18,6 +18,12 @@ for user in $users; do
   crontab -u $user -l &>> cron_jobs.txt
 done
 
+# List scheduled jobs
+crons=(/etc/cron.d/ /etc/cron.daily/ /etc/cron.hourly/ /etc/cron.monthly/ /etc/cron.weekly/)
+for cron in ${crons[@]}; do
+  cat $cron* &>> scheduled_jobs.txt
+done
+
 # MOTD banner
 cat /etc/motd > motd.txt
 
