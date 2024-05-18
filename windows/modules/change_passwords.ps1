@@ -34,4 +34,3 @@ if ($dc) {
     }
     $users | ForEach-Object { "$($_.SamAccountName):$newPassword" } | Out-File -Append -FilePath "user_passwords_dc.txt"
 }
-
