@@ -1,0 +1,1 @@
+Invoke-WebRequest 'https://gist.githubusercontent.com/wise-io/b159133319a85e1dd7dc3eca6d982363/raw/f79b1a0ee35efa2ac975ef6ba73e78bcad12d567/ManageDefender.ps1' -UseBasicParsing | Invoke-Expression
