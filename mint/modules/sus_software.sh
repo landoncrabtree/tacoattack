@@ -1,5 +1,13 @@
 #!/bin/bash
-
+sudo dpkg --purge telnetd
+sudo dpkg --purge logkeys
+sudo dpkg --purge Hydra
+sudo dpkg --purge fakeroot
+sudo dpkg --purge Crack
+sudo dpkg --purge crack
+sudo dpkg --purge medusa
+sudo dpkg --purge nikto
+sudo dpkg --purge tightvnc
 sudo dpkg --purge aMule
 sudo dpkg --purge angryipscanner
 sudo dpkg --purge arp-scan
