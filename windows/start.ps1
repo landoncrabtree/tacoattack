@@ -31,6 +31,9 @@ Write-Host "All shares removed."
 Start-Process powershell.exe -ArgumentList "-File .\modules\updater.ps1" -Verb RunAs -Wait
 Write-Host "Automatic updates enabled."
 
+# HardeningKitty
+Start-Process powershell.exe -ArgumentList "-File .\modules\kitty.ps1" -Verb RunAs -Wait
+
 # Load malwarebytes module
 Start-Process powershell.exe -ArgumentList "-File .\modules\malwarebytes.ps1" -Verb RunAs -Wait
 Write-Host "Malwarebytes installed (Scan must be run manually)."
